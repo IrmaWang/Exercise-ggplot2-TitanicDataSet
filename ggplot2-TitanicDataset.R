@@ -64,11 +64,11 @@ ggplot(titanic, aes(x = Age, fill = Survived ))+
 # I want to use boxplot layer
 titanic$Age <- as.numeric(titanic$Age)
 ggplot(titanic)+
-  geom_boxplot(aes(x = Survived, fill = Age),na.rm = TRUE )+
+  geom_boxplot(aes(x = Survived, y= Age),na.rm = TRUE )+
   theme_bw() +
   labs(y = "Age", x = "Survived", title = "Titanic Survival Rates by Age")
 
-### I have problem with this boxplot, I can't get box plotted 
+### I had problem with this boxplot,it took me an hour to figure out :(  
 
 # I want to the survival distribution with gender, age and class
 
